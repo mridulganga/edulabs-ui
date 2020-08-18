@@ -7,6 +7,8 @@ import DoingLabs from '@/pages/DoingLabs.vue'
 import Certificates from '@/pages/Certificates.vue'
 import Users from '@/pages/Users.vue'
 import CollegeBundles from '@/pages/CollegeBundles.vue'
+import Register from '@/pages/Register.vue'
+import UserProfile from '@/pages/UserProfile.vue'
 
 
 Vue.use(VueRouter)
@@ -46,6 +48,16 @@ Vue.use(VueRouter)
     path: '/users',
     name: 'Users',
     component: Users,
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: Register,
+  },
+  {
+    path: '/userProfile',
+    name: 'UserProfile',
+    component: UserProfile,
   }
 ]
 
