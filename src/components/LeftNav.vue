@@ -24,10 +24,10 @@ export default {
       items: [
         { title: "Top Labs", icon: "mdi-view-dashboard", link: "/" },
         { title: "Categories", icon: "mdi-image", link: "/categories" },
-        { title: "Doing", icon: "mdi-help-box" },
-        { title: "College Bundles", icon: "mdi-view-dashboard" },
-        { title: "Certificates", icon: "mdi-image" },
-        { title: "Users", icon: "mdi-help-box" },
+        { title: "Doing Labs", icon: "mdi-help-box", link:"/doingLabs" },
+        { title: "College Bundles", icon: "mdi-view-dashboard", link:"/collegeBundles" },
+        { title: "Certificates", icon: "mdi-image",link:"/certificates" },
+        { title: "Users", icon: "mdi-help-box", link:"/users" },
       ],
     };
   },
