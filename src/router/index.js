@@ -3,6 +3,11 @@ import VueRouter from 'vue-router'
 import TopLabs from '@/pages/TopLabs.vue'
 import Categories from '@/pages/Categories.vue'
 import Login from '@/pages/Login.vue'
+import DoingLabs from '@/pages/DoingLabs.vue'
+import Certificates from '@/pages/Certificates.vue'
+import Users from '@/pages/Users.vue'
+import CollegeBundles from '@/pages/CollegeBundles.vue'
+
 
 Vue.use(VueRouter)
 
@@ -21,6 +26,26 @@ Vue.use(VueRouter)
     path: '/categories',
     name: 'Categories',
     component: Categories,
+  },
+  {
+    path: '/doingLabs',
+    name: 'DoingLabs',
+    component: DoingLabs,
+  },
+  {
+    path: '/collegeBundles',
+    name: 'CollegeBundles',
+    component: CollegeBundles,
+  },
+  {
+    path: '/certificates',
+    name: 'Certificates',
+    component: Certificates,
+  },
+  {
+    path: '/users',
+    name: 'Users',
+    component: Users,
   }
 ]
 

@@ -1,4 +1,5 @@
 # edulabs
+Edulabs provide a guided, tutorial developed by peer
 
 ## Project setup
 ```
