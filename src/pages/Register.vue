@@ -19,7 +19,7 @@
               </v-toolbar>
               <v-card-text>
                 <v-form>
-                  <v-text-field label="Login" name="login" prepend-icon="mdi-account" type="text"></v-text-field>
+                  <v-text-field label="Name" name="name" prepend-icon="mdi-account" type="text"></v-text-field>
 
                   <v-text-field
                     id="password"
@@ -28,12 +28,32 @@
                     prepend-icon="mdi-lock"
                     type="password"
                   ></v-text-field>
+                  <v-text-field
+                    id="confirm_password"
+                    label="Confirm Password"
+                    name="confirm_password"
+                    prepend-icon="mdi-lock"
+                    type="password"
+                  ></v-text-field>
+                  <v-text-field
+                    id="college"
+                    label="College"
+                    name="college"
+                    prepend-icon="mdi-lock"
+                    type="text"
+                  ></v-text-field>
+                  <v-text-field
+                    id="email"
+                    label="Email"
+                    name="email"
+                    prepend-icon="mdi-lock"
+                    type="text"
+                  ></v-text-field>
                 </v-form>
               </v-card-text>
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn color="primary" @click="userLogin">Login</v-btn>
-                <v-btn color="primary" @click="userRegister" to="/register">Register</v-btn>
+                <v-btn color="primary" @click="userRegister">Register</v-btn>
 
               </v-card-actions>
             </v-card>
@@ -46,14 +66,11 @@
 
 <script>
 export default {
-  name: "Login",
+  name: "Register",
   methods:{
-    userLogin(){
-      this.$router.replace("/")
+    userRegister(){
+      this.$router.replace("/login")
     }
-    // userRegister(){
-    //   this.$router.replace("/register")
-    // }
   },
   props: {
     source: String,

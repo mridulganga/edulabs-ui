@@ -23,31 +23,22 @@
         class="hidden-sm-and-down"
       ></v-text-field>
       <v-spacer></v-spacer>
+    
       <v-btn icon>
-        <v-icon>mdi-apps</v-icon>
+        <v-icon @click="userProfile">mdi-account</v-icon>
       </v-btn>
-      <v-btn icon>
-        <v-icon>mdi-bell</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        large
-      >
-        <v-avatar
-          size="32px"
-          item
-        >
-          <v-img
-            src="https://cdn.vuetifyjs.com/images/logos/logo.svg"
-            alt="Vuetify"
-          ></v-img></v-avatar>
-      </v-btn>
+      
     </v-app-bar>
 </template>
 
 <script>
 export default {
     name: "TopNav",
+    methods:{
+    userProfile(){
+      this.$router.push("/userProfile")
+    }
+  },
     props:{
         title: String
     }
